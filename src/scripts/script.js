@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('.menu').addClass('open');
     })
 
-    $('#menu-close').click(() => {
+    $('.menu *').click(() => {
         $('.menu').removeClass('open');
     })
 
@@ -51,17 +51,17 @@ $(document).ready(function () {
         error.hide();
 
         console.log(!name.val())
-        if(!name.val()) {
+        if (!name.val()) {
             error.fadeIn();
             name.focus()
             return
         }
-        if(!phone.val() || !phone.inputmask('isComplete')) {
+        if (!phone.val() || !phone.inputmask('isComplete')) {
             error.fadeIn();
             phone.focus();
             return
         }
-        if(!position.val()) {
+        if (!position.val()) {
             error.fadeIn();
             position.focus();
             return
