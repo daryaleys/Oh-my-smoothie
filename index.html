@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Oh, my smoothie!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="src/styles/css/styles.css">
+    <link rel="stylesheet" href="src/styles/css/adaptive.css">
+</head>
+<body>
+
+<section class="main-common">
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="logo header__logo">
+                    <img src="src/images/logo.png" alt="Логотип" class="logo__img">
+                </div>
+                <div class="burger" id="burger">
+                    <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                         viewBox="0 0 24 24" width="100%" xml:space="preserve"
+                         xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon">
+                        <path d="M4,6.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+                        <path d="M4,12.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+                        <path d="M4,18.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+                    </g>
+                </svg>
+                </div>
+                <nav class="menu">
+                    <div class="menu__close" id="menu-close">
+                        <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="st0"
+                              d="M284.3,245.1l110.9-110.9c7.8-7.8,7.8-20.5,0-28.3s-20.5-7.8-28.3,0L256,216.8L145.1,105.9  c-7.8-7.8-20.5-7.8-28.3,0s-7.8,20.5,0,28.3l110.9,110.9L116.9,355.9c-7.8,7.8-7.8,20.5,0,28.3c3.9,3.9,9,5.9,14.1,5.9  c5.1,0,10.2-2,14.1-5.9L256,273.3l110.9,110.9c3.9,3.9,9,5.9,14.1,5.9s10.2-2,14.1-5.9c7.8-7.8,7.8-20.5,0-28.3L284.3,245.1z"/>
+                    </svg>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#food" class="menu__link">Меню</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#order" class="menu__link">Оформить заказ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container main__container">
+            <div class="main__image main__image_left">
+                <img src="src/images/main1.png" alt="Ягоды" class="main__image_img">
+            </div>
+            <div class="main__info">
+                <h1 class="title main__title">
+                    Побалуйте себя
+                    <span class="main__title_accent">Экзотическим</span>
+                    завтраком
+                </h1>
+                <p class="main__text">
+                    Нежная, кремовая текстура приготовленная, на любой вкус
+                    и цвет, украшенная свежими фруктами - пожалуй,
+                    это и есть начало хорошего дня!
+                </p>
+                <button type="button" class="button main__button" id="main-button">Посмотреть меню</button>
+            </div>
+            <div class="main__image main__image_right wow animate__animated animate__rotateInDownRight">
+                <img src="src/images/main2.png" alt="Смузи" class="main__image_img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="container advantages__container">
+        <h2 class="title advantages__title">почему выбирают <span class="advantages__title_float">именно нас?</span>
+        </h2>
+        <div class="advantages__text">
+            <p class="advantages__text_item">
+                В меню для Вас только натуральные и самые полезные продукты.
+            </p>
+            <p class="advantages__text_item">
+                Эти продукты помогают организму быстрее переваривать тяжелую пищу, ускоряют обмен веществ, выводят
+                лишнюю воду, отлично насыщают и дают силы, дарят энергию, помогают снизить чрезмерный аппетит
+                и способствуют быстрейшему расщеплению жиров.
+            </p>
+            <p class="advantages__text_item">
+                Регулярное употребление этого блюда укрепит иммунитет и здоровье, зарядит энергией, улучшит
+                работоспособность и память.
+            </p>
+        </div>
+        <div class="advantages__image">
+            <img src="src/images/advantages.png" alt="Авокадо" class="advantages__image_img">
+        </div>
+        <div class="advantages__items wow animate__animated animate__bounceInRight">
+            <div class="advantages__item">
+                <div class="advantages__item_icon">
+                    <img src="src/images/adv1.png" alt="Авокадо" class="advantages__item_icon-img">
+                </div>
+                <div class="advantages__item_desc">
+                    <div class="title advantages__item_title">
+                        вкусные фрукты
+                    </div>
+                    <div class="advantages__item_text">
+                        Мы доставляем фрукты
+                        <span class="nowrap">напрямую из Тайланда.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item_icon">
+                    <img src="src/images/adv2.png" alt="Груши" class="advantages__item_icon-img">
+                </div>
+                <div class="advantages__item_desc">
+                    <div class="title advantages__item_title">
+                        система лояльности
+                    </div>
+                    <div class="advantages__item_text">
+                        На второй заказ делаем для Вас скидку 20%.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item_icon">
+                    <img src="src/images/adv3.png" alt="Кокос" class="advantages__item_icon-img">
+                </div>
+                <div class="advantages__item_desc">
+                    <div class="title advantages__item_title">
+                        эстетичная подача
+                    </div>
+                    <div class="advantages__item_text">
+                        Смузи боул подается
+                        <span class="nowrap">в кокосовой чаше.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item_icon">
+                    <img src="src/images/adv4.png" alt="Гранат" class="advantages__item_icon-img">
+                </div>
+                <div class="advantages__item_desc">
+                    <div class="title advantages__item_title">
+                        гипоаллергенно
+                    </div>
+                    <div class="advantages__item_text">
+                        Йогурты и молоко <span class="nowrap">на растительной</span> основе.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="food" id="food">
+    <div class="container food__container">
+        <h2 class="title food__title">меню <span class="nowrap">смузи-боул</span></h2>
+        <div class="food__menu">
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full1.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">сладкое утро</h3>
+                <div class="food__card_compound">манго, шпинат, банан
+                    клубника, голубика</div>
+                <div class="food__card_price">1200 руб.</div>
+                <button type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full2.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">ореховый взрыв</h3>
+                <div class="food__card_compound">авокадо, йогурт, орех,
+                    клубника, черника</div>
+                <div class="food__card_price">1600 руб.</div>
+                <button type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full3.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">шоколадные эмоции</h3>
+                <div class="food__card_compound">йогурт, банан, малина,
+                    тахини, чиа</div>
+                <div class="food__card_price">1400 руб.</div>
+                <button type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full4.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">райское наслаждение</h3>
+                <div class="food__card_compound">йогурт, кешью, банан,
+                    молоко, какао</div>
+                <div class="food__card_price">1700 руб.</div>
+                <button type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full5.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">Банановый рай</h3>
+                <div class="food__card_compound">шпинат, банан,
+                    клубника, голубика</div>
+                <div class="food__card_price">1300 руб.</div>
+                <button  type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+            <div class="food__card wow animate__animated animate__zoomInLeft">
+                <div class="food__card_image">
+                    <img src="src/images/menu/full6.png" alt="Смузи" class="food__card_img">
+                </div>
+                <h3 class="title food__card_title">ягодный взрыв</h3>
+                <div class="food__card_compound">йогурт, банан, малина,
+                    ежевика, молоко</div>
+                <div class="food__card_price">1500 руб.</div>
+                <button type="button" class="button food__card_button">оформить заказ</button>
+            </div>
+
+            <div id="modal" class="modal food__modal">
+                <span class="modal__close">&times;</span>
+                <img class="modal__content">
+                <div class="modal__caption title food__card_title"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order" id="order">
+    <div class="container order__container">
+        <h2 class="title order__title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+        <div class="order__text">Заполните данные, и мы перезвоним Вам для уточнения всех деталей заказа.</div>
+        <div class="order__form">
+            <form action="#" class="form wow animate__animated animate__zoomIn" id="form">
+                <input type="text" class="form__input" placeholder="Введите имя" id="name">
+                <input type="text" class="form__input" placeholder="+7 (___) ___-__-__" id="phone">
+                <input type="text" class="form__input" placeholder="Название смузи боула" id="position">
+                <div class="form__error">Пожалуйста, заполните все поля формы</div>
+                <button type="button" class="button order__button" id="order-button">сделать заказ</button>
+                <div class="order__success">
+                    Спасибо за заказ! Мы скоро свяжемся с вами
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="logo footer__logo">
+            <img src="src/images/logo.png" alt="Логотип" class="logo__img">
+        </div>
+        <div class="footer__rights">Все права защищены</div>
+    </div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/inputmask/dist/jquery.inputmask.min.js"></script>
+<script src="node_modules/wow.js/dist/wow.min.js"></script>
+<script src="src/scripts/script.js"></script>
+
+</body>
+</html>
