@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: ViaodaLibre;
+  src: url("../../fonts/ViaodaLibre-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../../fonts/Raleway.ttf");
+}
+@font-face {
+  font-family: SignPainter;
+  src: url("../../fonts/signpainter_housescript.otf");
+}
+@font-face {
+  font-family: YellowTail;
+  src: url("../../fonts/Yellowtail-Regular.ttf");
+}
+@font-face {
+  font-family: Sansation;
+  src: url("../../fonts/Sansation-Light.ttf");
+}
+body {
+  background: #313030;
+  color: #F4F1E0;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 155px;
+}
+.logo .logo__img {
+  max-width: 100%;
+}
+
+.title {
+  font-family: ViaodaLibre, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 127%;
+}
+
+.button {
+  text-transform: uppercase;
+  background: #F92E4B;
+  color: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  border: 0;
+  cursor: pointer;
+  border-radius: 60px;
+  padding: 15px 25px;
+  width: 240px;
+  font-size: 18px;
+  line-height: 167%;
+}
+.button:hover {
+  background: #8C8989;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@keyframes main {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+@keyframes adv {
+  0% {
+    transform: translate(-15px, -15px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(-15px, -15px);
+  }
+}
+.main-common {
+  overflow: hidden;
+}
+.main-common .header .header__container {
+  padding: 60px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 748px;
+}
+.main-common .header .header__container .burger {
+  display: none;
+}
+.main-common .header .header__container .menu .menu__close {
+  display: none;
+}
+.main-common .header .header__container .menu .menu__list {
+  display: flex;
+  gap: 30px;
+}
+.main-common .header .header__container .menu .menu__list .menu__item {
+  list-style: none;
+}
+.main-common .header .header__container .menu .menu__list .menu__item .menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #F4F1E0;
+  transition: all 0.3s;
+}
+.main-common .header .header__container .menu .menu__list .menu__item .menu__link:hover {
+  color: #F92E4B;
+  text-decoration: underline;
+}
+.main-common .main {
+  position: relative;
+}
+.main-common .main .main__container {
+  display: flex;
+}
+.main-common .main .main__container .main__image {
+  position: relative;
+}
+.main-common .main .main__container .main__image.main__image_left {
+  top: -160px;
+  animation: main 3s linear infinite;
+}
+.main-common .main .main__container .main__image.main__image_right {
+  overflow: hidden;
+  position: absolute;
+  top: -110px;
+  right: calc((100vw - 1920px) / 2);
+}
+.main-common .main .main__container .main__info .main__title {
+  font-size: 68px;
+  line-height: 115%;
+  margin-bottom: 30px;
+  max-width: 630px;
+}
+.main-common .main .main__container .main__info .main__title .main__title_accent {
+  font-family: SignPainter, sans-serif;
+  font-size: 96px;
+  color: #ADFF00;
+  margin-left: 101px;
+}
+.main-common .main .main__container .main__info .main__text {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+  max-width: 520px;
+  margin-left: 101px;
+  margin-bottom: 60px;
+}
+.main-common .main .main__container .main__info .main__button {
+  margin-left: 101px;
+}
+
+.advantages .advantages__container {
+  margin-bottom: 190px;
+  position: relative;
+}
+.advantages .advantages__container .advantages__title {
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+.advantages .advantages__container .advantages__title .advantages__title_float {
+  margin-left: 204px;
+}
+.advantages .advantages__container .advantages__text {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+  margin-left: 204px;
+  margin-bottom: 60px;
+}
+.advantages .advantages__container .advantages__text .advantages__text_item {
+  margin-bottom: 15px;
+}
+.advantages .advantages__container .advantages__image {
+  position: absolute;
+  top: 178px;
+  left: -30px;
+  animation: adv 3s linear infinite;
+}
+.advantages .advantages__container .advantages__items {
+  margin-left: 306px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 40px;
+}
+.advantages .advantages__container .advantages__items .advantages__item {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  transition: all 0.3s;
+}
+.advantages .advantages__container .advantages__items .advantages__item:hover {
+  transform: scale(1.1);
+}
+.advantages .advantages__container .advantages__items .advantages__item .advantages__item_desc .advantages__item_title {
+  font-size: 25px;
+  line-height: 144%;
+  margin-bottom: 5px;
+}
+.advantages .advantages__container .advantages__items .advantages__item .advantages__item_desc .advantages__item_text {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+}
+.advantages .advantages__container .advantages__items .advantages__item:nth-child(4) .advantages__item_icon {
+  margin-right: 20px;
+}
+
+.food .food__container {
+  padding-top: 50px;
+}
+.food .food__container .food__title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.food .food__container .food__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 72px;
+  margin-bottom: 62px;
+}
+.food .food__container .food__menu .food__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.food .food__container .food__menu .food__card .food__card_image {
+  margin-bottom: 20px;
+}
+.food .food__container .food__menu .food__card .food__card_image .food__card_img {
+  border-radius: 30px;
+  width: 385px;
+  height: 266px;
+  object-fit: cover;
+  object-position: 50% 55%;
+  cursor: pointer;
+}
+.food .food__container .food__menu .food__card .food__card_image .food__card_img:hover {
+  opacity: 0.8;
+}
+.food .food__container .food__menu .food__card .food__card_title {
+  font-size: 25px;
+  line-height: 144%;
+  margin-bottom: 10px;
+}
+.food .food__container .food__menu .food__card .food__card_compound {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+  max-width: 195px;
+  margin-bottom: 10px;
+}
+.food .food__container .food__menu .food__card .food__card_price {
+  font-family: SignPainter, sans-serif;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.food .food__container .food__menu .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.food .food__container .food__menu .modal .modal__close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  user-select: none;
+}
+.food .food__container .food__menu .modal .modal__close:hover, .food .food__container .food__menu .modal .modal__close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.food .food__container .food__menu .modal .modal__content {
+  margin: auto;
+  display: block;
+  height: 80%;
+  max-width: 700px;
+  position: relative;
+  z-index: 10;
+}
+.food .food__container .food__menu .modal .modal__caption {
+  font-size: 25px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.order .order__container {
+  padding: 50px 5px 0;
+}
+.order .order__container .order__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.order .order__container .order__text {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+  margin-bottom: 40px;
+}
+.order .order__container .order__form {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, rgb(49, 48, 48)), url("../../images/order.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 60px;
+  margin-bottom: 100px;
+}
+.order .order__container .order__form .form {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0;
+}
+.order .order__container .order__form .form .form__input {
+  border: 1.5px solid #F92E4B;
+  outline: 0;
+  border-radius: 90px;
+  padding: 20px;
+  width: 220px;
+  font-family: Sansation, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 147%;
+  color: #F4F1E0;
+  background: #313030;
+}
+.order .order__container .order__form .form .form__input::placeholder {
+  color: #D8D8D8;
+}
+.order .order__container .order__form .form .form__error {
+  display: none;
+  color: red;
+  text-align: center;
+  max-width: 220px;
+}
+.order .order__container .order__form .form .order__button {
+  border-radius: 36px;
+  width: 220px;
+}
+.order .order__container .order__form .order__success {
+  display: none;
+  width: 220px;
+  min-height: 400px;
+  font-size: 20px;
+  text-align: center;
+  padding: 173px 0;
+}
+
+.footer {
+  background: #262626;
+}
+.footer .footer__container {
+  padding: 83px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__container .footer__rights {
+  font-family: Sansation, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+}
